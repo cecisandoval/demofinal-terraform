@@ -4,8 +4,8 @@ terraform {
       source = "hashicorp/aws"
       version = "~> 4.16"
     }
-      cloud {
-    organization = "example-org-4f836e"
+    cloud {
+        organization = "example-org-4f836e"
 
     workspaces {
       name = "demoFinal"
