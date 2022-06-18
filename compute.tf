@@ -11,13 +11,13 @@
 
 #create EC2 instance 
 resource "aws_instance" "web_server1" {
-    provider = aws.region-master
+    provider = aws.region-master-
     ami = var.ami-master
     instance_type = var.instance-type
     associate_public_ip_address = true
     vpc_security_group_ids = [aws_security_group.sgw.id]
     subnet_id = aws_subnet.sub_private1.id
-    key_name = aws_key_pair.instance_key.key_name
+    key_name = "mykey"
     #user_data = "${file("install_apache.sh")}"
 
     tags = {
@@ -35,7 +35,7 @@ resource "aws_instance" "msql_server1" {
     associate_public_ip_address = false
     vpc_security_group_ids = [aws_security_group.sgmsql.id]
     subnet_id = aws_subnet.sub_privatemsql1.id
-    key_name = aws_key_pair.instance_key.key_name
+    key_name = "mykey"
     #user_data = "${file("install_apache.sh")}"
     tags = {
 	Name = "msql_server1"	
