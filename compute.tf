@@ -3,8 +3,8 @@
 #Create key-pair for  EC2 
 resource "aws_key_pair" "instance_key" {
   provider = aws.region-master
-  key_name = "instance_key"
-  public_key = file("~/.ssh/id_rsa.pub")
+  key_name = "mykey"
+  #public_key = file("~/.ssh/id_rsa.pub")
 }
 
 
