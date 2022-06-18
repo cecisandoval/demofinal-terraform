@@ -3,19 +3,18 @@ terraform {
         aws = {
         source = "hashicorp/aws"
         version = "~> 4.16"
-    }
+        }
     }
     cloud {
         organization = "example-org-4f836e"
+
         workspaces {
-             name = "demoFinal"
+            name = "demoFinal"
         }
-
     }
-
+    
     required_version = ">= 1.2.0"
 
-  
 }
 
 # Create VPC
