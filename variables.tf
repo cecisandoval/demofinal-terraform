@@ -7,18 +7,18 @@ variable "profile"{
 
 variable "region-master" {
     type = string
-    default = "us-west-2"
+    default = "us-east-1"
 }
 
 variable "ami-master" {
     type = string
-    default = "ami-0bfb52e87a0ca5788"
+    default = "ami-052efd3df9dad4825"
 }
 
 
 variable "ami-msql" {
     type = string
-    default = "ami-0bfb52e87a0ca5788"
+    default = "ami-052efd3df9dad4825"
 }
 
 
