@@ -27,6 +27,10 @@ variable "instance-type" {
     default = "t2.micro"
 }
 
+variable "provider_token" {
+    type = string
+    default = "ca9kvEIuIYrIFA.atlasv1.l1hwGiUV0EGcqiStY944efrr5kSpuJuoD1yrOrP80Xh7yLzyBtk5yKJitqVAeK2hga4"
+}
 
 #ami-0ee8244746ec5d6d4
 #ami-0ee8244746ec5d6d4
